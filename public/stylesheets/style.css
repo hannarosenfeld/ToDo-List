@@ -9,13 +9,15 @@ body {
     align-items: center;
     justify-content: center;
     background: black;
+    padding-bottom: 58px; /* height of the footer */
+
 }
 
 
 #app-container {
-    width: 50%;
-    position: fixed;
-    top: 10%;
+    width: 30%;
+    padding-top: 2em;
+/*    top: 30%; */
     /* margin-left: -300px;half the width*/
 }
 
@@ -30,7 +32,7 @@ body {
 
 input {
     heigth: 2.3em;
-    width: 99%;
+    width: 100%;
     background: rgba(108, 122, 137, 0.6);
     color: white;
     min-height: 3.2em;
@@ -40,7 +42,7 @@ input {
 }
 
 .todo-list .item-name {
-    width: 95%;
+    width: 90%;
     padding: 1em;
     padding-left: 1.4em;
     color: white;
@@ -65,8 +67,10 @@ li:last-child{
 
 span {
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: lightgray;
+    float: right;
+    padding-left: 1.6em;
 }
 
 
@@ -95,7 +99,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     }
 
     #app-container{
-        width: 70%;
+        width: 60%;
     }
 
 }
