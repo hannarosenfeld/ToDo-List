@@ -40,7 +40,7 @@ input {
 }
 
 .todo-list .item-name {
-    width: 90%;
+    width: 95%;
     padding: 1em;
     padding-left: 1.4em;
     color: white;
@@ -64,6 +64,7 @@ li:last-child{
 }
 
 span {
+    margin: 0 auto;
     font-size: 1.2rem;
     color: lightgray;
 }
@@ -74,6 +75,10 @@ and (min-device-width: 320px)
 and (max-device-width: 500px)
 and (-webkit-min-device-pixel-ratio: 2) {
 
+    span {
+        padding-right: 1em;
+    }
+    
     #app-container{
         width: 85%;
     }
@@ -84,6 +89,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width: 500px) 
 and (max-device-width: 1000px)
 and (-webkit-min-device-pixel-ratio: 2) {
+
+    span {
+        padding-right: 1em;
+    }
 
     #app-container{
         width: 70%;
