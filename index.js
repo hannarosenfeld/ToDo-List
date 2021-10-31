@@ -11,9 +11,9 @@ dotenv.config()
 
 //const path = require('path');
 
-console.log( typeof(process.env.MONGO_URI));
+console.log( typeof(process.env.MONGODB_URI));
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 
