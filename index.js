@@ -1,18 +1,14 @@
-const express = require('express')
+const express = require("express")
 const app = express()
-//const dotenv = require('dotenv')
 const mongodb = require("mongodb")
 const mongoose = require("mongoose")
 const TodoTask = require("./models/TodoTask");
-const cors = require("cors")
+//const cors = require("cors")
 
-app.use(cors());
-app.use(express.json());
+//app.use(cors());
+//app.use(express.json());
 
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, './.env') });
-
-//dotenv.config();
+//const path = require('path');
 
 console.log(process.env.MONGO_URI);
 
