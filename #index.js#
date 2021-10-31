@@ -4,12 +4,8 @@ const mongodb = require("mongodb")
 const mongoose = require("mongoose")
 const TodoTask = require("./models/TodoTask")
 const dotenv = require("dotenv")
-//const cors = require("cors")
-dotenv.config()
-//app.use(cors());
-//app.use(express.json());
 
-//const path = require('path');
+dotenv.config()
 
 console.log( typeof(process.env.MONGODB_URI));
 
@@ -19,10 +15,8 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 }, () => {
     console.log("connected")
-    app.listen(process.env.PORT || 3000)
-    console.log('surfs up')
     // server will only run when connection is made
-//    app.listen(3000, () => console.log("surfs up"))
+    app.listen(3000, () => console.log("surfs up"))
 })
 
 app.use('/static', express.static('public'))
@@ -61,4 +55,4 @@ app.route("/remove/:id").get((req, res) => {
     });
 });
 
-
+//app.listen(process.env.PORT || 3000)
